@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💰 Expense Tracker</h1>
+
+  <input type="text" id="desc" placeholder="Description">
+  <input type="number" id="amount" placeholder="Amount">
+
+  <select id="category">
+    <option>Food</option>
+    <option>Travel</option>
+    <option>Shopping</option>
+    <option>Other</option>
+  </select>
+
+  <button onclick="addExpense()">Add</button>
+
+  <h2>Total: ₹<span id="total">0</span></h2>
+
+  <ul id="list"></ul>
+
+  <canvas id="chart"></canvas>
+
+  <button onclick="toggleTheme()">Toggle Theme</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
